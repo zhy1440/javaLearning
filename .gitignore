@@ -1,3 +1,8 @@
+# Config & output folder
+/out
+/.idea
+*.iml
+
 # Compiled class file
 *.class
 
