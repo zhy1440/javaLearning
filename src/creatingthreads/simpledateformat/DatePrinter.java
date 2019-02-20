@@ -1,4 +1,4 @@
-package pluralsight.simpledateformat;
+package creatingthreads.simpledateformat;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -11,21 +11,22 @@ public class DatePrinter implements Runnable {
     }
 
     @Override
+
     public void run() {
         if (name.equals("Formatter 1")) {
             System.out.println(name + " is setting the formatting pattern");
-            DateFormatterExample.dateFormatter.applyPattern("hh:mm:ss");
-
+        DateFormatterExample.dateFormatter.applyPattern("hh:mm:ss");
         }
 
-        while (true) {
+        while(true){
             try {
                 TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+
             Date now = new Date();
-            System.out.println(name + ": " + DateFormatterExample.dateFormatter.format(now));
+            System.out.println(name +": "+ DateFormatterExample.dateFormatter.format(now));
         }
     }
 }
