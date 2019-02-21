@@ -1,4 +1,4 @@
-package java8learning.lambda.lambda;
+package java8learning.lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;

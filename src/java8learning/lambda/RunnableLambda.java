@@ -1,4 +1,4 @@
-package java8learning.lambda.lambda;
+package java8learning.lambda;
 
 public class RunnableLambda {
     public static void main(String[] args) {

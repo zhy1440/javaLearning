@@ -1,9 +1,9 @@
-package java8learning.lambda.nonlambla;
+package java8learning.lambda;
 
 import java.io.File;
 import java.io.FileFilter;
 
-public class Main {
+public class NonLambda {
     public static class JavaFileFilter implements FileFilter {
         @Override
         public boolean accept(File file) {

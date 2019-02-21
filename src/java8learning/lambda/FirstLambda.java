@@ -1,4 +1,4 @@
-package java8learning.lambda.lambda;
+package java8learning.lambda;
 
 import java.io.File;
 import java.io.FileFilter;
