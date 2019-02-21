@@ -34,13 +34,15 @@ public class Main {
         double highSalary = 4000.0 / 100000;
         double lowSalary = 260.0 / 10000;
 
-        Calculator c1 = new Calculator(10 * TEM_THOUSAND, highRate, oldSalary);
-        Calculator c2 = new Calculator(2 * TEM_THOUSAND, lowRate, lowSalary);
-        Calculator c3 = new Calculator(10 * TEM_THOUSAND, highRate, highSalary);
+        Calculator c1 = new Calculator(20 * TEM_THOUSAND, highRate, oldSalary);
+        Calculator c2 = new Calculator(4 * TEM_THOUSAND, lowRate, lowSalary);
+        Calculator c3 = new Calculator(20 * TEM_THOUSAND, highRate, highSalary);
 
 
         System.out.println(c1.getCapitalText() + ": " + c1.getIncome());
         System.out.println(c2.getCapitalText() + ": " + c2.getIncome());
         System.out.println(c3.getCapitalText() + ": " + c3.getIncome());
+        System.out.println("new total: " + (c2.getIncome() + c3.getIncome()));
+        System.out.println("delta: " + (c2.getIncome() + c3.getIncome() - c1.getIncome()));
     }
 }
